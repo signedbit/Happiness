@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+mainClassName = 'net.signedbit.skype.TopicChanger'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'com.samczsun', name: 'skype4j', version: '0.1.5'
+}
